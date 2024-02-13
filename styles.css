@@ -92,22 +92,22 @@ body {
     box-shadow: 0 0 0 1px hsl(var(--focus-color));
 }
 
-.input-group .msg {
-    display: none;
+.msg {
+    display: block;
     font-size: .75rem;
 }
 
-.input-group.success .msg,
-.input-group.error .msg {
+.input-group .msg.success,
+.input-group .msg.error {
     display: block;
 }
 
 
-.input-group.success .msg {
+.input-group .msg.success {
     color: hsl(var(--success-color-hsl));
 }
 
-.input-group.error .msg {
+.input-group .msg.error {
     color: hsl(var(--error-color-hsl));
 }
 

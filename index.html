@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
     <div class="full-screen-container">
         <div class="login-container">
             <h1 class="login-title">Welcome</h1>
-            <form class="form">
-                <div class="input-group success">
+
+            <form class="form" id="form">
+                <div class="input-group" id="email-block">
                     <label for="email">Email</label>
                     <input type="email" name="emain" id="email">
-                    <span class="msg">Valid email</span>
+                    <span class="msg" id="email-message" hidden></span>
                 </div>
-                <div class="input-group error">
-                    <label for="password">Email</label>
+                <div class="input-group" id="password-block">
+                    <label for="password">Password</label>
                     <input type="password" name="password" id="password">
-                    <span class="msg">Incorrect password</span>
+                    <span class="msg" id="password-message" hidden></span>
                 </div>
                 <button type="submit" class="login-button">Login</button>
             </form>
